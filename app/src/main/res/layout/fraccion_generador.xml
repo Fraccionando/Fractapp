@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutParteFraccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:padding="1dp">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonParteEnt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonParteNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonParteDen"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                android:id="@+id/botonReiniciarFraccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/boton_reiniciar_fraccion"/>
+
+            <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                android:id="@+id/botonRemoverFraccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/boton_remover_fraccion"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/layoutNumeros"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:weightSum="4">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:measureWithLargestChild="false"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:transitionGroup="false">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="7"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="8"
+                    />
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text="9"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:measureWithLargestChild="false"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="5"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text="6"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:measureWithLargestChild="false"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="2"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text="3"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:measureWithLargestChild="false"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonAc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="AC"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonDel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text="DEL"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</merge>

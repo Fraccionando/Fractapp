@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="ES"
+        android:entries="@array/lang_entries"
+        android:entryValues="@array/lang_values"
+        android:key="idioma"
+        android:summary="@string/resumen_idioma"
+        android:title="@string/idioma"/>
+
+    <ListPreference
+        android:defaultValue="DETALLADA"
+        android:entries="@array/explicacion_entries"
+        android:entryValues="@array/explicacion_values"
+        android:key="explicacion"
+        android:summary="@string/resumen_explicacion"
+        android:title="@string/explicacion"/>
+</PreferenceScreen>

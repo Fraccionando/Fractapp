@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="6"
+        android:id="@+id/layoutRoot">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <WebView
+                android:id="@+id/webViewResultado"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="10"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:id="@+id/btnPasos"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_blue_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <com.porfirioads.fractapp.vistas.componentes.GeneradorFraccion
+                android:id="@+id/generadorFraccion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_blue_dark"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonMas"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:text="+"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonMenos"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:text="-"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonPor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:text="*"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonEntre"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:text="÷"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonIgual"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="="/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/holo_blue_dark"/>
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonEquivalentes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_equivalentes"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonReciprocas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_reciprocas"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonMayor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_mayor"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonSimplificar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_simplificar"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonCai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_cai"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonCam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_cam"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonMcm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_mcm"/>
+
+                    <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                        android:id="@+id/botonMcd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="@string/boton_mcd"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mathscribe/jqmath-0.4.3.css">
+    <script src='mathscribe/jquery-1.4.3.min.js'></script>
+    <script src='mathscribe/jqmath-etc-0.4.3.min.js' charset='utf-8'></script>
+</head>
+<body>Se resolverá la siguiente operación:<br>
+<math display="block">
+    <mrow>
+        <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+        </mfrac>
+        <mspace width="5px"/>
+        <mo>+</mo>
+        <mspace width="5px"/>
+        <mfrac>
+            <mn>1</mn>
+            <mn>4</mn>
+        </mfrac>
+    </mrow>
+</math>
+<br>En una suma o resta de fracciones, primero debemos analizar los
+denominadores.<br>
+<math display="block">
+    <mrow>[2, 4]</mrow>
+</math>
+<br>Como son diferentes, debemos expresar las fracciones de tal forma que tengan
+el mismo denominador. Para esto calcularemos el mínimo común múltiplo.<br>Se
+calculará el mínimo común múltiplo de los siguientes números:<br>
+<math display="block">
+    <mrow>[2, 4]</mrow>
+</math>
+<br>El mínimo común múltiplo (mcm) es el número más pequeño que es divisible
+entre un conjunto de números.<br>Para calcularlo tendremos un valor de prueba
+que comenzará en 2, y dividiremos todos los números entre ese valor. Si la
+división de al menos un número es exacta, el valor de prueba se convierte en un
+factor del mcm. Seguimos probando con el mismo valor, y cuando ninguna de las
+divisiones sea exacta, el valor de prueba aumenta una unidad y se repite el
+procedimiento. El cálculo termina cuando todos los números se convierten en
+1.<br>
+<math display="block">
+
+    <mtable>
+        <mtr><mtd><mn>1</mn></mtd></mtr>
+        <mtr><mtd><mn>2</mn></mtd></mtr>
+    </mtable>
+    <mrow>
+        <mrow>
+            <mn>2</mn>
+            <mspace width="5px"/>
+            <mn>4</mn>
+            <mspace width="5px"/>
+            <mo>|</mo>
+            <mspace width="5px"/>
+            <mn>2</mn>
+
+        </mrow>
+        <mspace width="0px" linebreak="newline"/>
+        <mrow>
+            <mn>2</mn>
+            <mspace width="5px"/>
+            <mn>4</mn>
+            <mspace width="5px"/>
+            <mo>|</mo>
+            <mspace width="5px"/>
+            <mn>2</mn>
+        </mrow>
+    </mrow>
+</math>
+<br>El mcm es igual al producto de los factores encontrados:<br>
+<math display="block">
+    <mrow>(2)(2) = 4</mrow>
+</math>
+<br>El numerador de cada nueva fracción es igual a dividir el mcm calculado
+entre el denominador de la fracción y multiplicada por su numerador. El
+denominador de la nueva fracción será el mcm.<br>
+<math display="block">
+    <mrow>
+        <mfrac>
+            <mn>4 ÷ 2 * 1</mn>
+            <mn>4</mn>
+        </mfrac>
+        +
+        <mfrac>
+            <mn>4 ÷ 4 * 1</mn>
+            <mn>4</mn>
+        </mfrac>
+    </mrow>
+</math>
+<br>La operación queda así:<br>
+<math display="block">
+    <mrow>
+        <mfrac>
+            <mn>2</mn>
+            <mn>4</mn>
+        </mfrac>
+        <mspace width="5px"/>
+        <mo>+</mo>
+        <mspace width="5px"/>
+        <mfrac>
+            <mn>1</mn>
+            <mn>4</mn>
+        </mfrac>
+    </mrow>
+</math>
+<br>Por último se realizan las operaciones sobre los numeradores:<br>
+<math display="block">
+    <mrow>
+        <mfrac>
+            <mn>2 + 1</mn>
+            <mn>4</mn>
+        </mfrac>
+    </mrow>
+</math>
+<br>El resultado de la operación es:<br>
+<math display="block">
+    <mrow>
+        <mfrac>
+            <mn>3</mn>
+            <mn>4</mn>
+        </mfrac>
+    </mrow>
+</math>
+<br></body>
+</html>

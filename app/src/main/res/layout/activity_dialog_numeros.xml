@@ -1,0 +1,202 @@
+<ScrollView
+    android:id="@+id/scrollView2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context="com.porfirioads.fractapp.vistas.activities.DialogNumeros">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/layoutRoot">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="7"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="8"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="9"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="5"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="6"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="9">
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/boton0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="0"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonAc"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="AC"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonDel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="DEL"/>
+
+                <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                    android:id="@+id/botonRem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="REM"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+            android:id="@+id/botonReiniciarNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/boton_reiniciar_numeros"/>
+
+        <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+            android:id="@+id/botonAgregarNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/boton_agregar_numero"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_light"/>
+
+        <WebView
+            android:id="@+id/webViewNumeros"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_blue_light">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                android:id="@+id/botonAceptar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/boton_aceptar"/>
+
+            <com.porfirioads.fractapp.vistas.componentes.AutoResizeTextButton
+                android:id="@+id/botonCancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/boton_cancelar"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lang_entries">
+        <item>@string/idioma_espanol</item>
+        <item>@string/idioma_ingles</item>
+    </array>
+    <array name="lang_values">
+        <item>ES</item>
+        <item>EN</item>
+    </array>
+    <array name="explicacion_entries">
+        <item>@string/explicacion_detallada</item>
+        <item>@string/explicacion_no_detallada</item>
+    </array>
+    <array name="explicacion_values">
+        <item>DETALLADA</item>
+        <item>NO_DETALLADA</item>
+    </array>
+</resources>
